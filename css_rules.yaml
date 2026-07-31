@@ -40,6 +40,27 @@ post_page_rules:
               selector: "#recent-posts .recent-post-info a:first-child",
               attr: "text",
             },
+    anzhiyu:
+      {
+        author:
+          [
+            { selector: ".cf-friends-name", attr: "text" },
+            { selector: ".flink-item-name", attr: "text" },
+            { selector: ".anzhiyu-flink-list .flink-item-name", attr: "text" },
+          ],
+        link:
+          [
+            { selector: ".cf-friends-link", attr: "href" },
+            { selector: ".anzhiyu-flink-list .flink-list-item a", attr: "href" },
+          ],
+        avatar:
+          [
+            { selector: ".cf-friends-avatar", attr: "data-lazy-src" },
+            { selector: ".cf-friends-avatar", attr: "src" },
+            { selector: ".anzhiyu-flink-list .flink-list-item a img", attr: "data-lazy-src" },
+            { selector: ".anzhiyu-flink-list .flink-list-item a img", attr: "src" },
+          ],
+      },
           ],
         link:
           [
